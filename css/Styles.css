@@ -61,20 +61,22 @@
 .The-Black-and-Red-5-hsla {
   color: hsla(0, 96, 7, 1);
 }
-
+/*Pagina INICIO------------------------------------------------------*/
 * {
   /*universal-a toda la pagina*/
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
-  background-color: whitesmoke;
+  background-color: rgb(228, 255, 255);
   color: hsla(0, 96, 7, 1);
   font-family: fantasy, papyrus;
+  
 }
 
 p {
   /*logo PEDALEA CONMIGO */
   font-size: 30;
+  font-family: monospace ;
 
 }
 
@@ -106,10 +108,54 @@ nav a {
   text-decoration: none;
 }
 
-/*Pagina Contacto*/
-form {
+/*Pagina CONTACTO------------------------------------------------------*/
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+  padding: 40px;
+  gap: 40px;
+}
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border:2px solid black;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+   margin: 0 auto;
+}
+.info-contacto {
+  flex: 1;
+  background-color: #2e2e2e;
+  color: black;
+  padding: 40px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  width: 300px;
-  margin: auto;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-contacto hr {
+  border: 0.5px solid #555;
+}
+
+.redes {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.redes img {
+  width: 25px;
+  height: 25px;
+  filter: grayscale(1) brightness(0.8);
+  transition: 0.3s;
+}
+
+.redes img:hover {
+  filter: none;
 }

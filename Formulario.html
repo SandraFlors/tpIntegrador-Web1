@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Contacto-Pedalea Conmigo</title>
@@ -7,21 +8,33 @@
     -->
     <link rel="stylesheet" href="css/Styles.css"> <!--enlazado a css (para darle estilo)-->
 </head>
+
 <body>
     <header>
-  <p>Pedalea Conmigo</p>
+        <p>Pedalea Conmigo</p>
 
-<nav>
-   <ul>
-        <li><a href="index.html">Inicio</a></li> <!--Enlaze a las otras Paginas-->
-        <li><a href="Articulo.html">Articulos</a></li>
-        <li><a href="Formulario.html">Contacto</a></li>
-    </ul>
-</nav>
-
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li> <!--Enlaze a las otras Paginas-->
+                <li><a href="Articulo.html">Articulos</a></li>
+                <li><a href="Formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-  
-  
+
+    <form id="formulario">
+      <label>Nombre:</label>
+      <input type="text" id="nombre" required maxlength="30">
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Teléfono:</label>
+      <input type="text" id="telefono" required>
+
+      <button type="submit">Enviar</button>
+    </form>
 
 </body>
+
 </html>

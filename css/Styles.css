@@ -1,37 +1,81 @@
 /* ELECCION DE PALETA DE COLORES! /*
  /* Color Theme Swatches in Hex */
-.The-Black-and-Red-1-hex { color: #2A8C82; }
-.The-Black-and-Red-2-hex { color: #41BFB3; }
-.The-Black-and-Red-3-hex { color: #91F2E9; }
-.The-Black-and-Red-4-hex { color: #275950; }
-.The-Black-and-Red-5-hex { color: #260101; }
+.The-Black-and-Red-1-hex {
+  color: #2A8C82;
+}
+
+.The-Black-and-Red-2-hex {
+  color: #41BFB3;
+}
+
+.The-Black-and-Red-3-hex {
+  color: #91F2E9;
+}
+
+.The-Black-and-Red-4-hex {
+  color: #275950;
+}
+
+.The-Black-and-Red-5-hex {
+  color: #260101;
+}
 
 /* Color Theme Swatches in RGBA */
-.The-Black-and-Red-1-rgba { color: rgba(42, 140, 130, 1); }
-.The-Black-and-Red-2-rgba { color: rgba(65, 191, 178, 1); }
-.The-Black-and-Red-3-rgba { color: rgba(145, 242, 232, 1); }
-.The-Black-and-Red-4-rgba { color: rgba(39, 89, 80, 1); }
-.The-Black-and-Red-5-rgba { color: rgba(38, 0, 0, 1); }
+.The-Black-and-Red-1-rgba {
+  color: rgba(42, 140, 130, 1);
+}
+
+.The-Black-and-Red-2-rgba {
+  color: rgba(65, 191, 178, 1);
+}
+
+.The-Black-and-Red-3-rgba {
+  color: rgba(145, 242, 232, 1);
+}
+
+.The-Black-and-Red-4-rgba {
+  color: rgba(39, 89, 80, 1);
+}
+
+.The-Black-and-Red-5-rgba {
+  color: rgba(38, 0, 0, 1);
+}
 
 /* Color Theme Swatches in HSLA */
-.The-Black-and-Red-1-hsla { color: hsla(174, 53, 35, 1); }
-.The-Black-and-Red-2-hsla { color: hsla(174, 49, 50, 1); }
-.The-Black-and-Red-3-hsla { color: hsla(174, 79, 76, 1); }
-.The-Black-and-Red-4-hsla { color: hsla(168, 38, 25, 1); }
-.The-Black-and-Red-5-hsla { color: hsla(0, 96, 7, 1); }
+.The-Black-and-Red-1-hsla {
+  color: hsla(174, 53, 35, 1);
+}
 
-*{ /*universal-a toda la pagina*/
+.The-Black-and-Red-2-hsla {
+  color: hsla(174, 49, 50, 1);
+}
+
+.The-Black-and-Red-3-hsla {
+  color: hsla(174, 79, 76, 1);
+}
+
+.The-Black-and-Red-4-hsla {
+  color: hsla(168, 38, 25, 1);
+}
+
+.The-Black-and-Red-5-hsla {
+  color: hsla(0, 96, 7, 1);
+}
+
+* {
+  /*universal-a toda la pagina*/
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
-background-color: aqua;
-color:hsla(0, 96, 7, 1);
-font-family: fantasy , papyrus ;
+  background-color: whitesmoke;
+  color: hsla(0, 96, 7, 1);
+  font-family: fantasy, papyrus;
 }
 
-p{ /*logo PEDALEA CONMIGO */
- font-size: 30;
- 
+p {
+  /*logo PEDALEA CONMIGO */
+  font-size: 30;
+
 }
 
 header {
@@ -42,14 +86,15 @@ header {
   background-color: #333;
   color: black;
   padding: 15px;
-  
+
 }
- nav ul {
+
+nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 10;
-  color:black ; 
+  color: black;
 }
 
 nav ul li {
@@ -59,4 +104,12 @@ nav ul li {
 nav a {
   color: black;
   text-decoration: none;
+}
+
+/*Pagina Contacto*/
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
 }

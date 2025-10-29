@@ -68,11 +68,10 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
-  background-color: rgb(228, 255, 255);
+  background-color: aqua;
   color: hsla(0, 96, 7, 1);
   font-family: fantasy, papyrus;
-
-}
+  
 
 p {
   /*logo PEDALEA CONMIGO */
@@ -112,7 +111,12 @@ nav a {
 
 
 /*Pagina ARTICULOS--------------------------------------------------------------------------------------------------------------*/
+.contenedor{
 
+}
+.columna{
+
+}
 
 /*Pagina CONTACTO--------------------------------------------------------------------------------------------------------------*/
 .contacto {

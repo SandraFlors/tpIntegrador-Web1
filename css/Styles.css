@@ -71,7 +71,7 @@
   background-color: aqua;
   color: hsla(0, 96, 7, 1);
   font-family: fantasy, papyrus;
-  
+  padding: 10px;
 
 p {
   /*logo PEDALEA CONMIGO */
@@ -144,7 +144,13 @@ padding: 15px;
       color:#2e2e2e;
      
     }
+    .columna h3{
+      color:#2e2e2e;
+      font-style: italic;
+    }
 /*Pagina CONTACTO--------------------------------------------------------------------------------------------------------------*/
+
+
 .contacto {
   display: flex;
   justify-content: center;

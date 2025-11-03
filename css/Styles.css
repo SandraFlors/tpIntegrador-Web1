@@ -185,9 +185,6 @@ form {
 .info-contacto:hover{
   transform: scale(1.03)
 }
-.info-contacto hr {
-  border: 0.5px solid #555;
-}
 
 .redes {
   display: flex;
@@ -196,10 +193,10 @@ form {
 }
 
 .redes img {
-  width: 25px;
-  height: 25px;
-  filter: grayscale(1) brightness(0.8);
-  transition: 0.3s;
+  width: 40px;
+  height: 40px;
+
+ 
 }
 
 .redes img:hover {

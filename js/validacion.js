@@ -1,1 +1,2 @@
-console.log("Enalazo a js-validacion")
+console.log("Enlazado a js-validacion")
+

@@ -202,3 +202,40 @@ form {
 .redes img:hover {
   filter: none;
 }
+
+
+
+/*Pagina FORMULARIO--------------------------------------------------------------------------------------------------------------*/
+
+font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin-top: 50px;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+button {
+  margin: 20px;
+  padding: 10px 25px;
+  font-size: 18px;
+  border: none;
+  background-color: #1e88e5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+h1 {
+  color: #333;
+}

@@ -1,10 +1,9 @@
 console.log("Enlazado a js-Carrusel")
 // Array con imágenes de ciclismo 
-const imagenes = [ "ImagenesCycle/Carrusel2.jpeg", "ImagenesCycle/Carrusel3.jpeg", "ImagenesCycle/Carrusel4.jpeg"
+const imagenes = ["ImagenesCycle/Carrusel1.jpeg", "ImagenesCycle/Carrusel2.jpeg", "ImagenesCycle/Carrusel3.jpeg", "ImagenesCycle/Carrusel4.jpeg"
   
 ];
 
-// Índice actual
 let indice = 0;
 
 // Obtener el elemento de la imagen

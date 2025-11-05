@@ -63,16 +63,17 @@
 }
 
 /*Pagina INICIO-----------------------------------------------------------------------------------------------------------------*/
-* {
-  /*universal-a toda la pagina*/
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-  background-color: aqua;
-  color: hsla(0, 96, 7, 1);
-  font-family: fantasy, papyrus;
-  padding: 10px;
 
+
+* { /*universal-a toda la pagina*/
+   padding: 0%;
+    margin: 0%; 
+    box-sizing: border-box; 
+    font-family: fantasy, papyrus;
+     background-color: aqua; 
+     color: hsla(0, 96, 7, 1); 
+     padding: 10px;
+   
 p {
   /*logo PEDALEA CONMIGO */
   font-size: 30;
@@ -205,37 +206,44 @@ form {
 
 
 
-/*Pagina FORMULARIO--------------------------------------------------------------------------------------------------------------*/
+/*Pagina CARRUSEL--------------------------------------------------------------------------------------------------------------*/
 
-font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f0f0f0;
-  margin-top: 50px;
+.carrusel{
+  position: relative;
+ width: 100%;
+  margin: 0;
+}
+.carrusel img{
+width:100%;/*ANCHO*/
+height:400% ;/*ALTO*/
+border: 3px solid #333; /*COLOR BORDE*/
+object-fit: cover; /*ajusta la imagen*/
+border-radius: 8px;
+
 }
 
-img {
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-button {
-  margin: 20px;
-  padding: 10px 25px;
-  font-size: 18px;
+.btn-lateral {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  background-color: rgba(0,0,0,0.5);
+  color: black;
   border: none;
-  background-color: #1e88e5;
-  color: white;
-  border-radius: 6px;
+  padding: 12px 18px;
+  font-size: 22px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 50%;
+  transition: 0.3s ease;
 }
 
-button:hover {
-  background-color: #1565c0;
+.izquierda {
+  left: 15px;
 }
 
-h1 {
-  color: #333;
+.derecha {
+  right: 15px;
+}
+.btn-lateral:hover {
+  background-color: #333;
+  transform: translateY(-50%) scale(1.1);
 }

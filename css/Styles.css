@@ -113,7 +113,38 @@ nav a {
   text-decoration: none;
 }
 
+/* INICIO - CONSEJOS -------------------- ----------------------------------------------------------------------------*/
+.seccion-consejos{
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius:0;
+  margin: 20px;
+}
 
+.seccion-consejos h2 {
+  color: black;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+
+.texto-consejos {
+  margin: 25px 10px;
+  line-height: 1.6;
+}
+
+.texto-consejos h3 {
+  margin-top: 20px;
+  color: black;
+  font-size: 22px;
+}
+
+.texto-consejos p {
+  color: #2e2e2e;
+  margin-bottom: 10px;
+}
 
 /*Pagina ARTICULOS--------------------------------------------------------------------------------------------------------------*/
 .contenedor{

@@ -73,11 +73,11 @@
      background-color: aqua; 
      color: hsla(0, 96, 7, 1); 
      padding: 10px;
-   
+   }
 p {
   /*logo PEDALEA CONMIGO */
   font-size: 30;
-  font-family: monospace;
+ font-family: monospace;
 
 }
 
@@ -113,12 +113,40 @@ nav a {
   text-decoration: none;
 }
 
+.medios-pago {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; 
+ padding: 10px;
+  background-color: #333; 
+  color: aqua; 
+  flex-wrap: wrap; 
+  border-top: 2px solid black; 
+}
+.medios-pago p {
+  color: #260101;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.medios-pago img {
+  width: 60px;   
+  height: 50px;
+}
+
+.medios-pago img:hover {
+  transform: scale(1.15);
+}
+
 .pie-pagina{
 text-align: center;
 }
 
-/* INICIO - CONSEJOS -------------------- ----------------------------------------------------------------------------*/
-.seccion-consejos{
+
+/* INICIO - CONSEJOS ------------------------------------------------------------------------------------------------*/
+.seccion-consejos {
   background-color: #333;
   padding: 20px;
   text-align: center;

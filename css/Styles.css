@@ -113,6 +113,10 @@ nav a {
   text-decoration: none;
 }
 
+.pie-pagina{
+text-align: center;
+}
+
 /* INICIO - CONSEJOS -------------------- ----------------------------------------------------------------------------*/
 .seccion-consejos{
   background-color: #333;

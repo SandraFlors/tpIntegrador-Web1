@@ -246,8 +246,50 @@ form {
   justify-content: center;
   gap: 20px;
 }
+.contacto .item{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  background-color: aqua; 
+  transition: 0.3s;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+  border-color: #2a8c82;
+  box-shadow: 0 0 4px #2a8c82;
+  background-color: #ffffff; 
+}
+
+
+
 .info-contacto:hover{
   transform: scale(1.03)
+}
+
+.mensaje-final {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.mensaje-final p {
+  background-color: white;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+
 }
 
 .redes {

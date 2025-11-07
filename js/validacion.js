@@ -7,48 +7,76 @@ console.log("Enlazado a js-validacion");
 //mostrando los datos enviados (usando createElement). 
 //    ■ En caso de haber errores, deben ser mostrados manipulando el HTML (no usar alertas nativas).
 
-const formulario=document.getElementById('formulario');
+  function recarga(event) {
+  event.preventDefault(); 
+   
+
+   const username = document.getElementById("username")
+   const email = document.getElementById("email")
+   const password= document.getElementById("password")
+   const confirm = document.getElementById("confirm-password")
+   const terms = document.getElementById ("terms")
+ 
+for (const e of document.querySelectorAll(".error")) e.remove();
+  const mensajeViejo = document.getElementById("mensaje-usuario");
+  if (mensajeViejo) mensajeViejo.remove();
+
+  let valid = true;
 
 
-formulario.addEventListener('submit',(e) =>{ //realiza un evento
-        e.preventDefault(); //al momento de enviar los datos no se envie a pagina eeronea
-
-        validarUsuario();
+  if (username.value === "" || username.value.length < 10 || username.value.length > 20) {
+    const error = document.createElement("div");
+    error.className = "error";
+    error.textContent = "nombre de usuario entre 10 y 20 caracterres";
+    error.style.color = "red";
+    username.parentNode.appendChild(error);
+    valid = false;
+  }
     
-});
 
+   
+  const emailRegex = /^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,}$/;
 
-
-function validarUsuario() {
-    //capturamos los datos
-const nombre = document.getElementById("nombre");
-const email = document.getElementById("email");
-const telefono = document.getElementById("telefono");
-const mensaje = document.getElementById("mensaje");
-    //expresiones regulares
-    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //expresion reg de email
-    const regexTelefono = /^[0-10]{7,15}$/; //expresion reg de telefono
-
-    
-    if (nombre.length < 3) {
-       alert("debe ingresar mas de 3 caracteres")
-    }
-
-    if (!regexEmail.test(email.value)) {
-
-    }
-
-    if (!regexTelefono.test(telefono)) {
-
-    }
-
-    if (mensaje.length < 5) {
-
-    }
-
-    return form;
+if (email.value === "" || !emailRegex.test(email.value)) {
+  const error = document.createElement("div");
+  error.className = "error";
+  error.textContent = "Correo invalido";
+  error.style.color = "red";
+  email.parentNode.appendChild(error);
+  valid = false;
 }
 
+if (password.value === "" || password.value.length <= 8) {
+        const error = document.createElement("div");
+        error.className = "error";
+        error.textContent = "contraseña debe ser mayor a 8 caracteres";
+        error.style.color = "red";
+        password.parentNode.appendChild(error);
+        valid = false;
+      }
+if (confirm.value === "" || confirm.value !== password.value) {
+        const error = document.createElement("div");
+        error.className = "error";
+        error.textContent = "las contraseñas no coinciden";
+        error.style.color = "red";
+        confirm.parentNode.appendChild(error);
+        valid = false;
+      }
+if (!terms.checked) {
+        const error = document.createElement("div");
+        error.className = "error";
+        error.textContent = "acepte los terminos y condiciones";
+        error.style.color = "red";
+        terms.parentNode.appendChild(error);
+        valid = false;
+      }
+if (valid) {
+const mensaje = document.createElement("p");
+mensaje.textContent = "Usuario ${username.value} con email ${email.value} creado con éxito!";
+mensaje.id = "mensaje-usuario";
+document.body.appendChild(mensaje);
+}
+}
 
 
 

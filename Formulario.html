@@ -32,27 +32,25 @@
   <section class="contacto">
 
 
-    <form id="formulario">
-      <label>Nombre:</label>
-      <input type="text" id="nombre" required maxlength="30">
+
+    <form id="formulario" action="" onsubmit="">
+
+      <label>Nombre:</label >
+      <input type="text" id="nombre" placeholder="EJ: lourdes" >
 
       <label>Email:</label>
-      <input type="email" id="email" required>
+      <input type="email" id="email" placeholder="EJ: luli@gmail.com" >
 
       <label>Teléfono:</label>
-      <input type="text" id="telefono" required>
+      <input type="text" id="telefono " placeholder="EJ: 2664707070"  >
 
       <label>Mensaje:</label>
-      <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <textarea id="mensaje"  placeholder="Escribe tu mensaje aquí..." ></textarea>
 
       <button type="submit">Enviar</button>
     </form>
 
-    <div id="resultado"> </div>
-    <!--REVISAAARRRRR al darle boton enviar , que salga un msj : 
-    por ejemplo: "¡Gracias! Recibimos tu mensaje. Pronto nos pondremos en contacto.";
-    
-    HACER VALIDACIONES CON JS EN CONTACTO----------------------------------------------------------------------------------------------------------->
+      <script src="js/validacion.js"></script> <!--Enlazado a js--------------------------------------------------------------------------------------->
 
     <div class="info-contacto">
       <p>📧 PedaleaConmigo@gmail.com</p>
@@ -67,10 +65,8 @@
       </div>
     </div>
   </section>
-  <script src="js/validacion.js"></script> <!--Enlazado a js-->
- 
 
-   
+
 
  <div class="pie-pagina">
  <p>2025 PEDALEA CONMIGO - TODOS LOS DERECHOS RESERVADOS</p>

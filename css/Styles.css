@@ -314,13 +314,16 @@ form {
 /*Pagina CARRUSEL--------------------------------------------------------------------------------------------------------------*/
 
 .carrusel{
-  position: relative;
+  
  width: 100%;
+ height: 200%;
   margin: 0;
+  display: flex;
+justify-content: center;
 }
 .carrusel img{
-width:100%;/*ANCHO*/
-height:400% ;/*ALTO*/
+width:50%;/*ANCHO*/
+heigth:50%;/*ALTO*/
 border: 3px solid #333; /*COLOR BORDE*/
 object-fit: cover; /*ajusta la imagen*/
 border-radius: 8px;
